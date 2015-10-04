@@ -1,15 +1,7 @@
 <!DOCTYPE html>
 <html>
-<body>
-<button onclick = "document.getElementById('clicked').innerHTML = 'timer started'; setInterval(remind, 600000);">Start</button>
-<p id="clicked"></p>
-
-<script>
-function remind() {
-	document.getElementById("clicked").innerHTML = "timer started";
-    alert('Stand Up');
-}
-</script>
-
+  <script src="standup.js"></script>
+<body onload="start()">
+  <p id="clicked"></p>
 </body>
 </html>
